@@ -13,6 +13,7 @@ Using Postgres and SQL:
 * CREATE DATABASE salon;
 * CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
 * CREATE TABLE clients (id serial PRIMARY KEY, client_name varchar, list_id int);
+* CREATE TABLE salon_test WITH TEMPLATE salon;
 
 
 ```
