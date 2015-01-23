@@ -92,6 +92,4 @@ describe(Stylist) do
       expect(Client.all()).to(eq([]))
     end
   end
-
-
 end

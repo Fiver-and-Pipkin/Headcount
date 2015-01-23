@@ -3,7 +3,7 @@ Headcount
 
 by Debbie Cravey
 
-Headcount creates a listing of stylists at a salon and their customer roster based on user input.
+Headcount creates a listing of hair stylists and their customer roster for a hair salon. It allows the salon owner to maintain the lists by adding and deleting stylists and their clients.
 
 Installation
 ------------

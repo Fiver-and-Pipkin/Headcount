@@ -1,4 +1,4 @@
-<h1>Add a client to <%= @stylist.name() %>'s roster </h1>
+<h2>Add a client to <%= @stylist.name() %>'s roster </h2>
 
 
 <div class="col-md-6">
@@ -12,7 +12,7 @@
   </form>
 
   <% if @stylist.clients().any?() %>
-  <h3>Here are all the clients in this list:</h3>
+  <h4>Here are all the clients in this list:</h4>
 
   <ul>
     <% @stylist.clients().each() do |client| %>
@@ -20,8 +20,9 @@
     <% end %>
   </ul>
   <% else %>
-  <p>There are no clients yet!</p>
+  <p>Stylist has no clients yet!</p>
   <% end %>
 
   <p><a href="/stylists/<%= @stylist.id() %>/edit">Edit or Delete <%= @stylist.name() %>'s info</a></p>
     <p><a href="/">Return to Main Page</a></p>
+</div>
