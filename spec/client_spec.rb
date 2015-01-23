@@ -8,6 +8,20 @@ describe(Client) do
     end
   end
 
+  describe("#client_name") do
+    it("lets you read the client_name out") do
+      test_client = Client.new({:client_name => "Wolfman Jack", :list_id => 1})
+      expect(test_client.client_name()).to eq("Wolfman Jack")
+    end
+  end
+
+  describe("#list_id") do
+    it("lets you read the list ID out") do
+      test_client = Client.new({:client_name => "Wolfman Jack", :list_id => 1})
+      expect(test_client.list_id()).to eq(1)
+    end
+  end
+
   describe("#save") do
     it("adds a client to a stylist roster") do
       test_client = Client.new({:client_name => "Wolfman Jack", :list_id => 1})
