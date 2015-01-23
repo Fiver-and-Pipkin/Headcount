@@ -32,6 +32,17 @@ describe(Stylist) do
     end
   end
 
+  describe(".find") do
+    it("returns a stylist by ID number") do
+      test_stylist = Stylist.new({:name => "Harriet", :id => nil})
+      test_stylist.save()
+      test_stylist2 = Stylist.new({:name => "Bob", :id => nil})
+      test_stylist2.save()
+      expect(Stylist.find(test_stylist2.id())).to eq(test_stylist2)
+    end
+  end
+  
+
   describe("#==") do
     it("is the same stylist if it has the same name") do
       stylist1 = Stylist.new({:name => "Rapunzel", :id => nil})
