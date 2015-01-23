@@ -37,4 +37,13 @@ describe(Client) do
       expect(client1).to(eq(client2))
     end
   end
+
+  describe("#update") do
+    it("lets you update clients in the database") do
+      client = Client.new({:client_name => "Madame de Pompadour", :list_id => 1})
+      client.save()
+      client.update({:client_name => "Princess Marie de Gonzague"})
+      expect(client.client_name()).to eq("Princess Marie de Gonzague")
+    end
+  end
 end

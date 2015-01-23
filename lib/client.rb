@@ -24,4 +24,10 @@ class Client
   define_method(:==) do |another_client|
     self.client_name().==(another_client.client_name()).&(self.list_id().==(another_client.list_id()))
   end
+
+  define_method(:update) do |attributes|
+    @client_name = attributes.fetch(:client_name)
+    @list_id = self.list_id()
+    DB.exec("UPDATE clients SET client_name = '#{@client_name}' WHERE list_id = #{@list_id};")
+  end
 end

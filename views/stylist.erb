@@ -23,8 +23,5 @@
   <p>There are no clients yet!</p>
   <% end %>
 
-  <p><a href="/stylists/<%= @stylist.id() %>/edit">Edit <%= @stylist.name() %>'s info</a></p>
-
-
-  <p><a href="/clients/<%= @client.id() %>/edit">Edit <%= @client.name() %>'s info</a></p>
-  <p><a href="/">Return to Main Page</a></p>
+  <p><a href="/stylists/<%= @stylist.id() %>/edit">Edit or Delete <%= @stylist.name() %>'s info</a></p>
+    <p><a href="/">Return to Main Page</a></p>
