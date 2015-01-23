@@ -16,4 +16,12 @@ class Client
     end
     clients
   end
+
+  define_method(:save) do
+    DB.exec("INSERT INTO clients (client_name, list_id) VALUES ('#{@client_name}', #{@list_id});")
+  end
+
+  define_method(:==) do |another_client|
+    self.client_name().==(another_client.client_name()).&(self.list_id().==(another_client.list_id()))
+  end
 end
