@@ -61,4 +61,13 @@ describe(Stylist) do
       expect(stylist1).to eq(stylist2)
     end
   end
+
+  describe("#update") do
+    it("lets you update stylists in the database") do
+      stylist = Stylist.new({:name => "Sydney Guilaroff", :id => nil})
+      stylist.save()
+      stylist.update({:name => "Legros de Rumigny"})
+      expect(stylist.name()).to eq("Legros de Rumigny")
+    end
+  end
 end
