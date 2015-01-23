@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  /*background-image: url(../img/scissors.png);*/
+  background-color: #DDD;
+  background-size: 2000px 1000px;
+  background-attachment:  fixed;
+  display: compact;
+  font-family: Futura;
+  color: #660000;
+}
+
+img{
+  float:right;
+  padding:25px;
+  border:2px solid #660000;
+  position: relative;
+  top: 20px;
+  margin: 10px, 10px, 10px, 10px;
+}
+
+.btn {
+  margin: 50px 0 50px 50px;
+}
+
+h4 {
+  font-style: italic;
+}

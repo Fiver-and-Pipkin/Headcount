@@ -1,5 +1,7 @@
 <h1>Add a client to <%= @stylist.name() %>'s roster </h1>
 
+
+<div class="col-md-6">
 <form action="/clients" method="post">
   <input id="list_id" name="list_id" type="hidden" value="<%= @stylist.id() %>">
 
@@ -22,3 +24,4 @@
 <% end %>
 
 <a href="/">Return to Main Page</a>
+</div>
