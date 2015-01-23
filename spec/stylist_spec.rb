@@ -41,7 +41,6 @@ describe(Stylist) do
       expect(Stylist.find(test_stylist2.id())).to eq(test_stylist2)
     end
   end
-  
 
   describe("#==") do
     it("is the same stylist if it has the same name") do
