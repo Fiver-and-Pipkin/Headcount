@@ -10,9 +10,9 @@ Installation
 
 Install Headcount by first cloning the repository.
 Using Postgres and SQL:
-CREATE DATABASE salon;
-CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
-CREATE TABLE clients (id serial PRIMARY KEY, client_name varchar, list_id int);
+* CREATE DATABASE salon;
+* CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
+* CREATE TABLE clients (id serial PRIMARY KEY, client_name varchar, list_id int);
 
 
 ```
@@ -20,9 +20,9 @@ $ git clone http://github.com/dacravey/Headcount
 ```
 
 Install all of the required gems:
-sinatra
-sinatra-contrib
-pg
+* sinatra
+* sinatra-contrib
+* pg
 ```
 $ bundle install
 ```
